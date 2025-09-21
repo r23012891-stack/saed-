@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول - وزارة التربية</title>
+  <style>
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .container img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    label {
+      display: block;
+      text-align: right;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- شعار -->
+    <img src="logo.png.jpeg" alt="شعار وزارة التربية">
+
+    <h2>جمهورية العراق</h2>
+    <h2>وزارة التربية</h2>
+
+    <h3>تسجيل الدخول</h3>
+    <p>اللجنة الدائمة للامتحانات العامة لعام 2025/2024<br>
+    يرجى إدخال المعلومات بشكل صحيح لتسجيل الدخول إلى المنصة</p>
+
+    <!-- ✅ النموذج الصحيح للتنقل -->
+    <form action="login.html" method="get">
+      <!-- الرقم الامتحاني -->
+      <label for="examNumber">الرقم الامتحاني</label>
+      <input type="text" id="examNumber" name="examNumber" placeholder="ادخل الرقم الامتحاني" required>
+
+      <!-- الرقم السري -->
+      <label for="password">الرقم السري</label>
+      <input type="password" id="password" name="password" placeholder="ادخل الرقم السري" required>
+
+      <!-- السؤال -->
+      <label for="question">كم حاصل جمع 90 + 11؟</label>
+      <input type="text" id="question" name="question" placeholder="اكتب الناتج هنا" required>
+
+      <input class="submit-btn" type="submit" value="تسجيل الدخول">
+    </form>
+
+    <div class="footer">
+      جميع الحقوق محفوظة © وزارة التربية 2025
+    </div>
+  </div>
+
+</body>
+</html>
